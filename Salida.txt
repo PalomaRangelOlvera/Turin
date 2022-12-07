@@ -1,0 +1,9 @@
+&& = Operadorlogico
+& = Caracter
+|| = Operadorlogico
+| = Caracter
+! = Operadorlogico
+++ = IncrementoTermino
++ = OperadorTermino
+-- = IncrementoTermino
+- = OperadorTermino

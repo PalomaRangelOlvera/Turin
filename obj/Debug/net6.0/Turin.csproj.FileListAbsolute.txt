@@ -1,0 +1,15 @@
+C:\Users\l2014\ITQ\Automatas\Turin\obj\Debug\net6.0\Turin.csproj.AssemblyReference.cache
+C:\Users\l2014\ITQ\Automatas\Turin\obj\Debug\net6.0\Turin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\l2014\ITQ\Automatas\Turin\obj\Debug\net6.0\Turin.AssemblyInfoInputs.cache
+C:\Users\l2014\ITQ\Automatas\Turin\obj\Debug\net6.0\Turin.AssemblyInfo.cs
+C:\Users\l2014\ITQ\Automatas\Turin\obj\Debug\net6.0\Turin.csproj.CoreCompileInputs.cache
+C:\Users\l2014\ITQ\Automatas\Turin\bin\Debug\net6.0\Turin.exe
+C:\Users\l2014\ITQ\Automatas\Turin\bin\Debug\net6.0\Turin.deps.json
+C:\Users\l2014\ITQ\Automatas\Turin\bin\Debug\net6.0\Turin.runtimeconfig.json
+C:\Users\l2014\ITQ\Automatas\Turin\bin\Debug\net6.0\Turin.dll
+C:\Users\l2014\ITQ\Automatas\Turin\bin\Debug\net6.0\Turin.pdb
+C:\Users\l2014\ITQ\Automatas\Turin\obj\Debug\net6.0\Turin.dll
+C:\Users\l2014\ITQ\Automatas\Turin\obj\Debug\net6.0\refint\Turin.dll
+C:\Users\l2014\ITQ\Automatas\Turin\obj\Debug\net6.0\Turin.pdb
+C:\Users\l2014\ITQ\Automatas\Turin\obj\Debug\net6.0\Turin.genruntimeconfig.cache
+C:\Users\l2014\ITQ\Automatas\Turin\obj\Debug\net6.0\ref\Turin.dll
