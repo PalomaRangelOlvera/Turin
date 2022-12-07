@@ -200,6 +200,17 @@ namespace Turin
         private void For()
         {
             match("for");
+            match("(");
+            match("int");
+            match(Tipos.Identificador);
+            match(Tipos.Asignacion);
+            match(Tipos.FinSentencia);
+            match(Tipos.Identificador);
+            match(Tipos.OperadorRelacional);
+            match(Tipos.Numero);
+            match(";");
+            match(Tipos.Identificador);
+            match(Tipos.IncrementoTermino);
             if (GETContenido() == "{")
             {
                 BloqueInstricciones();
@@ -208,6 +219,7 @@ namespace Turin
             {
                 Instruccion();
             }
+            match("}");
         }
         // While -> while (Condicion) BloqueInstricciones | Instruccion ;
         private void While()
