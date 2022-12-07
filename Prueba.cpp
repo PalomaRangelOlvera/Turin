@@ -5,7 +5,7 @@
 
 void main() 
 {
-    cout >> "Ingrese el radio: ";
+    /*cout >> "Ingrese el radio: ";
     cin  << radio;
     if (a<b)
     {
@@ -32,5 +32,5 @@ void main()
     
     a = 0;
     a = (3+5)*8 - (10-4)/2;
-    radio = pi * (radio * radio);
+    radio = pi * (radio * radio);*/
 }
