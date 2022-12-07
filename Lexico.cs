@@ -8,9 +8,6 @@ namespace Turin
         StreamReader archivo;
         protected StreamWriter log;
         protected int Linea;
-        string dt = DateTime.Now.ToString("ss:mm:hh tt");
-        string D = DateTime.Now.ToString("dd/MM/yyyy");
-        protected int NumCaracter;
 
         const int F = -1;
         const int E = -2;
@@ -59,8 +56,9 @@ namespace Turin
             archivo = new StreamReader("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Prueba.cpp");
             log = new StreamWriter("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Prueba.log");
             log.AutoFlush = true;
-            log.WriteLine("Archivo: prueba.cpp");
-            log.WriteLine("hora de compilación:  "+D+" "+dt);
+            log.WriteLine("Archivo: ");
+            DateTime time = DateTime.Now;
+            log.WriteLine("hora de compilación:  "+time.ToString());
             Linea = 1;
         }
         public Lexico(string filename)
