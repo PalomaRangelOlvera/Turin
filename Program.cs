@@ -9,15 +9,6 @@ namespace Turin
         try
             {
                 Lexico L = new Lexico();
-                #include <stdio.h>;
-                L.nextToken();
-                if(L.GETContenido() == "include")
-                {
-                    L.nextToken();
-                }
-                else{
-                    throw new error("Error, se esperaba un include");
-                }
 
                 while (!L.FinArchivo())
                 {
