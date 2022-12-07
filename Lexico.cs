@@ -289,6 +289,10 @@ namespace Turin
                     {
                         buffer += transicion;
                     }
+                    if(transicion=='\n')
+                    {
+                        Linea++;
+                    }
                     archivo.Read();
                 }
             }
