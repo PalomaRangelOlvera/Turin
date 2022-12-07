@@ -10,6 +10,7 @@ namespace Turin
         protected int Linea;
         string dt = DateTime.Now.ToString("ss:mm:hh tt");
         string D = DateTime.Now.ToString("dd/MM/yyyy");
+        protected int NumCaracter;
 
         const int F = -1;
         const int E = -2;
@@ -59,13 +60,13 @@ namespace Turin
             log = new StreamWriter("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Prueba.log");
             log.AutoFlush = true;
             log.WriteLine("Archivo: prueba.cpp");
-            log.WriteLine("Hora de compilación:  "+dt+" "+D);
+            log.WriteLine("Compilado:  "+D+" "+dt);
             Linea = 1;
         }
         public Lexico(string filename)
         {
             archivo = new StreamReader(filename);
-            log = new StreamWriter("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Prueba.cp");
+            log = new StreamWriter("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Prueba.log");
             log.AutoFlush = true;
             log.WriteLine("Archivo: ");
             log.WriteLine("Hora   : ");
@@ -211,7 +212,7 @@ namespace Turin
             {
                 return 14;
             }
-            else if (t== '>' + '>')
+            else if (t== '>' || t== '>')
             {
                 return 34;
             }
@@ -219,7 +220,7 @@ namespace Turin
             {
                 return 15;
             }
-            else if (t== '<' + '<')
+            else if (t== '<' || t== '<')
             {
                 return 35;
             }
