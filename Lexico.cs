@@ -60,7 +60,7 @@ namespace Turin
             log = new StreamWriter("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Prueba.log");
             log.AutoFlush = true;
             log.WriteLine("Archivo: prueba.cpp");
-            log.WriteLine("Compilado:  "+D+" "+dt);
+            log.WriteLine("hora de compilación:  "+D+" "+dt);
             Linea = 1;
         }
         public Lexico(string filename)
@@ -69,7 +69,7 @@ namespace Turin
             log = new StreamWriter("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Prueba.log");
             log.AutoFlush = true;
             log.WriteLine("Archivo: ");
-            log.WriteLine("Hora   : ");
+            log.WriteLine("hora de compilación   : ");
             Linea = 1;
         }
         ~Lexico()
@@ -150,7 +150,7 @@ namespace Turin
                 break;
             }
         }
-        int columna(char t)
+        int columna(char t) 
         {
             if (FinArchivo())
             {
@@ -212,7 +212,7 @@ namespace Turin
             {
                 return 14;
             }
-            else if (t== '>' || t== '>')
+            else if (t== '>' && t== '>')
             {
                 return 34;
             }
@@ -220,7 +220,7 @@ namespace Turin
             {
                 return 15;
             }
-            else if (t== '<' || t== '<')
+            else if (t== '<' && t== '<')
             {
                 return 35;
             }
