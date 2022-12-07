@@ -6,7 +6,8 @@ namespace Turin
     public class Lexico : Token
     {
         StreamReader archivo;
-        StreamWriter log;
+        protected StreamWriter log;
+        protected int Linea;
 
         const int F = -1;
         const int E = -2;
@@ -52,15 +53,23 @@ namespace Turin
         };
         public Lexico()
         {
-            archivo = new StreamReader("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Entrada.txt");
-            log = new StreamWriter("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Salida.txt");
+            archivo = new StreamReader("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Prueba.cpp");
+            log = new StreamWriter("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Prueba.log");
             log.AutoFlush = true;
+            log.WriteLine("Archivo: prueba.cpp");
+            string dt = DateTime.Now.ToString("ss:mm:hh tt");
+            string D = DateTime.Now.ToString("dd/MM/yyyy");
+            log.WriteLine("Hora de compilación:  "+dt+" "+D);
+            Linea = 1;
         }
         public Lexico(string filename)
         {
             archivo = new StreamReader(filename);
-            log = new StreamWriter("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Salida.txt");
+            log = new StreamWriter("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Prueba.cp");
             log.AutoFlush = true;
+            log.WriteLine("Archivo: ");
+            log.WriteLine("Hora   : ");
+            Linea = 1;
         }
         ~Lexico()
         {
@@ -95,7 +104,7 @@ namespace Turin
                 SETClasificacion(Tipos.Inicializacion); 
                 break;
                 case 12: 
-                SETClasificacion(Tipos.Operadorlogico); 
+                SETClasificacion(Tipos.FinSentencia); 
                 break;
                 case 14:
                 case 16: 
@@ -131,6 +140,12 @@ namespace Turin
                 break;
                 case 33: 
                 SETClasificacion(Tipos.ParentecisDerecha); 
+                break;
+                case 34: 
+                SETClasificacion(Tipos.FlujoSalida);
+                break;
+                case 35: 
+                SETClasificacion(Tipos.FlujoEntrada); 
                 break;
             }
         }
