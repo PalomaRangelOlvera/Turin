@@ -10,7 +10,8 @@ namespace Turin
             Identificador, Numero, Asignacion, FinSentencia, Ternario, 
             OperadorRelacional, OperadorTermino, OperadorFactor, Operadorlogico, 
             IncrementoTermino, IncrementoFactor, Caracter, Inicializacion, cadena,
-            TipoDatos, Zona, Condicion, Ciclo, InicioBloque, FinBloque, ParentecisDerecha, ParentecisIzquierda
+            TipoDatos, Zona, Condicion, Ciclo, InicioBloque, FinBloque, ParentecisDerecha, ParentecisIzquierda,
+            FlujoSalida, FlujoEntrada
         }
         
         private string Contenido;
