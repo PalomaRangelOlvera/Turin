@@ -8,6 +8,8 @@ namespace Turin
         StreamReader archivo;
         protected StreamWriter log;
         protected int Linea;
+        string dt = DateTime.Now.ToString("ss:mm:hh tt");
+        string D = DateTime.Now.ToString("dd/MM/yyyy");
 
         const int F = -1;
         const int E = -2;
@@ -57,8 +59,6 @@ namespace Turin
             log = new StreamWriter("c:\\Users\\l2014\\ITQ\\Automatas\\Turin\\Prueba.log");
             log.AutoFlush = true;
             log.WriteLine("Archivo: prueba.cpp");
-            string dt = DateTime.Now.ToString("ss:mm:hh tt");
-            string D = DateTime.Now.ToString("dd/MM/yyyy");
             log.WriteLine("Hora de compilación:  "+dt+" "+D);
             Linea = 1;
         }
