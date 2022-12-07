@@ -211,9 +211,17 @@ namespace Turin
             {
                 return 14;
             }
+            else if (t== '>' + '>')
+            {
+                return 34;
+            }
             else if (t == '<')
             {
                 return 15;
+            }
+            else if (t== '<' + '<')
+            {
+                return 35;
             }
             else if (t == '*')
             {
