@@ -93,7 +93,11 @@ namespace Turin
         // Instruccion -> Cout | Cin | If 
         private void Instruccion()
         {
-            if (GETContenido() == "cout")
+            if(GETContenido()=="Librerias")
+            {
+                Librerias();
+            }
+            else if (GETContenido() == "cout")
             {
                 Cout();
             }
@@ -127,8 +131,18 @@ namespace Turin
         private void Asignacion()
         {
             match(Tipos.Identificador);
-            match(Tipos.Asignacion);
-            Expresion();
+            if(GETContenido() == "+" || GETContenido() == "+")
+            {
+                match(GETContenido());
+            }
+            if(GETContenido() == "-" || GETContenido() == "-")
+            {
+                match(GETContenido());
+            }
+            else{
+                match(Tipos.Asignacion);
+                Expresion();
+            }
             match(Tipos.FinSentencia);
         }
 
