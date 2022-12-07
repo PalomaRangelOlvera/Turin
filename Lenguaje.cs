@@ -236,6 +236,7 @@ namespace Turin
             {
                 Instruccion();
             }
+            match("}");
         }
 
         // Do -> do BloqueInstricciones | Instruccion while (Condicion) ;
@@ -264,6 +265,20 @@ namespace Turin
             Condicion();
             match(")");
             if (GETContenido() == "{")
+            {
+                BloqueInstricciones();
+            }
+            else
+            {
+                Instruccion();
+            }
+            match("}");
+        }
+        // ELSE -> Else {BloqueInstricciones | Instrucciones}
+        private void Else()
+        {
+            match("else");
+            if(GETContenido() == "{")
             {
                 BloqueInstricciones();
             }
