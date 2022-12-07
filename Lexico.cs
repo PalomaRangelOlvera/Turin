@@ -214,7 +214,7 @@ namespace Turin
             }
             else if (t== '>' && t== '>')
             {
-                return 34;
+                return 27;
             }
             else if (t == '<')
             {
@@ -222,7 +222,7 @@ namespace Turin
             }
             else if (t== '<' && t== '<')
             {
-                return 35;
+                return 28;
             }
             else if (t == '*')
             {

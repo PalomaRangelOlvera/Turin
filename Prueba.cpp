@@ -5,7 +5,7 @@
 
 void main() 
 {
-    cout > "Ingrese el radio: ";
+    cout >> "Ingrese el radio: ";
     cin  < radio;
     if (a<b)
     {
